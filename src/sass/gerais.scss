@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  max-width: $desktop-grande;
+  margin: 0 auto;
+}

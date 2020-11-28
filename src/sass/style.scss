@@ -1,5 +1,121 @@
 @import "reset";
+@import "variaveis";
+@import "gerais";
+@import "sections";
+@import "footer";
 
-body {
-  background-color: black;
+/*Header*/
+
+//header tem altura de 30px e 55px cada lado
+.header {
+  height: 30px;
+}
+
+.header img {
+  display: block;
+  float: left;
+  width: 165px;
+  height: 44px;
+  margin-top: 30px;
+  margin-left: 55px;
+}
+
+.header button {
+  display: block;
+  float: right;
+  cursor: pointer;
+  background: $cor-botao;
+  margin-top: 30px;
+  margin-right: 55px;
+  width: 84px;
+  height: 32px;
+  color: #fff;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 2px;
+}
+
+/*Main*/
+
+.main {
+  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) 10%),
+    url("../images/main-background.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 750px;
+  text-align: center;
+  border-bottom: 10px solid $cor-borda;
+}
+
+.main h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 4.375rem;
+  margin-top: 210px;
+  margin-bottom: 22px;
+}
+
+.main h2 {
+  font-size: 1.625rem;
+  margin-bottom: 22px;
+}
+
+.main h3 {
+  font-size: 1.188rem;
+}
+
+.form {
+  margin-top: 25px;
+}
+
+.form input {
+  font-size: 1rem;
+  padding: 8px;
+  width: 500px;
+  height: 70px;
+  outline: 0;
+}
+
+.form button {
+  font-size: 1.25rem;
+  width: 255px;
+  height: 70px;
+  color: #fff;
+  background: $cor-botao;
+  border: 0;
+  border-radius: 2px;
+  margin-left: -4px;
+}
+
+.form button:hover {
+  cursor: pointer;
+  background: $cor-botao-hover;
+}
+
+.form i {
+  margin-left: 5px;
+}
+
+/*Responsividade*/
+
+@media (min-width: 950px) and (max-width: 1449px) {
+  .main h1 {
+    font-size: 3.125rem;
+    line-height: 55px;
+  }
+
+  .header img {
+    width: 135px;
+    height: 35px;
+  }
+
+  .form input {
+    width: 450px;
+    height: 60px;
+  }
+
+  .form button {
+    height: 60px;
+  }
 }
